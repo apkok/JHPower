@@ -5,49 +5,177 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/color_ee">
+    android:background="@color/color_ee"
+    android:padding="12dp">
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_basic_info"
+        app:layout_constraintTop_toTopOf="parent"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="12dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
         android:background="@drawable/circle_shape">
 
         <TextView
             android:id="@+id/tv_survey_company"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="查勘单位:"
-            android:textColor="@color/color_69"
+            android:text="查 勘 单 位"
+            android:textColor="@color/black"
             android:textSize="12sp"
-            android:padding="10dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             />
         <TextView
             android:id="@+id/tv_survey_company_content"
             app:layout_constraintTop_toTopOf="@id/tv_survey_company"
-            app:layout_constraintLeft_toRightOf="@id/tv_survey_company"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/tv_survey_company"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="株洲市建华水电安装有限公司"
             android:textSize="12sp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:textColor="@color/color_69"
+            android:textColor="@color/color_9c"
+            app:flow_horizontalAlign="center"
+            />
+        <View
+            android:id="@+id/view_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_ee"
+            app:layout_constraintTop_toBottomOf="@id/tv_survey_company"
+            android:layout_marginTop="12dp"
             />
         <TextView
             android:id="@+id/tv_number"
-            app:layout_constraintTop_toBottomOf="@id/tv_survey_company"
-            app:layout_constraintLeft_toLeftOf="@id/tv_survey_company"
-            app:layout_constraintRight_toRightOf="@id/tv_survey_company"
+            app:layout_constraintTop_toBottomOf="@id/view_line1"
+            app:layout_constraintLeft_toLeftOf="parent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="编        号:"
+            android:text="编            号"
             android:textSize="12sp"
-            android:textColor="@color/color_69"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/tv_number"
+            app:layout_constraintBottom_toBottomOf="@id/tv_number"
+            app:layout_constraintRight_toRightOf="parent"
+            android:hint="请输入队名和编号"
+            android:textColorHint="@color/color_9c"
+            android:textSize="12sp"
+            android:textColor="@color/color_9c"
+            android:background="@null"
+            />
+        <View
+            android:id="@+id/view_line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_ee"
+            app:layout_constraintTop_toBottomOf="@id/tv_number"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/tv_survey_master"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="勘察负责人"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/view_line2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            />
+        <EditText
+            android:id="@+id/tv_survey_master_name"
+            app:layout_constraintTop_toTopOf="@id/tv_survey_master"
+            app:layout_constraintBottom_toBottomOf="@id/tv_survey_master"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/color_9c"
+            android:background="@null"
+            android:hint="请输入勘察负责人姓名"
+            />
+        <View
+            android:id="@+id/view_line3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_ee"
+            app:layout_constraintTop_toBottomOf="@id/tv_survey_master"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/tv_Survey_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/view_line3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="10dp"
+            android:text="查 勘 人 员"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入查勘人员姓名"
+            android:textSize="12sp"
+            android:textColor="@color/color_9c"
+            app:layout_constraintTop_toTopOf="@id/tv_Survey_member"
+            app:layout_constraintBottom_toBottomOf="@id/tv_Survey_member"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@null"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_survey_route"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_shape"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        app:layout_constraintTop_toBottomOf="@id/cl_basic_info">
+
+        <TextView
+            android:id="@+id/tv_survey_route"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查勘的线路"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+        <TextView
+            android:id="@+id/tv_transformer_substation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="变电站名称"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_survey_route"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/et_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/tv_transformer_substation"
+            app:layout_constraintBottom_toBottomOf="@id/tv_transformer_substation"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@null"
+            android:hint="请输入变电站名称"
+            android:textColorHint="@color/color_9c"
+            android:textSize="12sp"
             />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
