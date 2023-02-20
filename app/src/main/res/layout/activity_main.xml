@@ -21,8 +21,7 @@
             android:text="查勘单位"
             style="@style/JHPower_survey_tv"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            />
+            app:layout_constraintLeft_toLeftOf="parent" />
         <EditText
             android:id="@+id/tv_survey_company_content"
             android:text="株洲市建华水电安装有限公司"
@@ -32,23 +31,20 @@
             app:layout_constraintBottom_toBottomOf="@id/tv_survey_company"
             android:maxLines="1"
             android:background="@null"
-            style="@style/JHPower_survey_et"
-            />
+            style="@style/JHPower_survey_et" />
         <View
             android:id="@+id/view_line1"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/color_ee"
             app:layout_constraintTop_toBottomOf="@id/tv_survey_company"
-            android:layout_marginTop="12dp"
-            />
+            android:layout_marginTop="12dp" />
         <TextView
             android:id="@+id/tv_number"
             android:text="编号"
             app:layout_constraintTop_toBottomOf="@id/view_line1"
             app:layout_constraintLeft_toLeftOf="parent"
-            style="@style/JHPower_survey_tv_top12"
-            />
+            style="@style/JHPower_survey_tv_top12" />
         <EditText
             android:id="@+id/et_number"
             app:layout_constraintTop_toTopOf="@id/tv_number"
@@ -56,23 +52,20 @@
             app:layout_constraintRight_toRightOf="parent"
             android:hint="请输入队名和编号"
             android:background="@null"
-            style="@style/JHPower_survey_et"
-            />
+            style="@style/JHPower_survey_et" />
         <View
             android:id="@+id/view_line2"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/color_ee"
             app:layout_constraintTop_toBottomOf="@id/tv_number"
-            android:layout_marginTop="12dp"
-            />
+            android:layout_marginTop="12dp" />
         <TextView
             android:id="@+id/tv_survey_master"
             android:text="勘察负责人"
             app:layout_constraintTop_toBottomOf="@id/view_line2"
             app:layout_constraintLeft_toLeftOf="parent"
-            style="@style/JHPower_survey_tv_top12"
-            />
+            style="@style/JHPower_survey_tv_top12" />
         <EditText
             android:id="@+id/tv_survey_master_name"
             app:layout_constraintTop_toTopOf="@id/tv_survey_master"
@@ -80,23 +73,20 @@
             app:layout_constraintRight_toRightOf="parent"
             style="@style/JHPower_survey_et"
             android:background="@null"
-            android:hint="请输入勘察负责人姓名"
-            />
+            android:hint="请输入勘察负责人姓名" />
         <View
             android:id="@+id/view_line3"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/color_ee"
             app:layout_constraintTop_toBottomOf="@id/tv_survey_master"
-            android:layout_marginTop="12dp"
-            />
+            android:layout_marginTop="12dp" />
         <TextView
             android:id="@+id/tv_survey_member"
             app:layout_constraintTop_toBottomOf="@id/view_line3"
             app:layout_constraintLeft_toLeftOf="parent"
             android:text="查勘人员"
-            style="@style/JHPower_survey_tv_top12"
-            />
+            style="@style/JHPower_survey_tv_top12" />
         <EditText
             android:id="@+id/et_survey_member_name"
             android:hint="请输入查勘人员姓名"
@@ -104,8 +94,7 @@
             app:layout_constraintTop_toTopOf="@id/tv_survey_member"
             app:layout_constraintBottom_toBottomOf="@id/tv_survey_member"
             app:layout_constraintRight_toRightOf="parent"
-            android:background="@null"
-            />
+            android:background="@null" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -126,15 +115,13 @@
             android:textColor="@color/black"
             android:textStyle="bold"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            />
+            app:layout_constraintLeft_toLeftOf="parent" />
         <TextView
             android:id="@+id/tv_transformer_substation"
             android:text="变电站名称"
             style="@style/JHPower_survey_tv_top12"
             app:layout_constraintTop_toBottomOf="@id/tv_survey_route"
-            app:layout_constraintLeft_toLeftOf="parent"
-            />
+            app:layout_constraintLeft_toLeftOf="parent" />
         <EditText
             android:id="@+id/et_transformer_substation_name"
             android:hint="请输入变电站名称"
@@ -142,23 +129,20 @@
             app:layout_constraintBottom_toBottomOf="@id/tv_transformer_substation"
             app:layout_constraintRight_toRightOf="parent"
             android:background="@null"
-            style="@style/JHPower_survey_et"
-            />
+            style="@style/JHPower_survey_et" />
         <View
             android:id="@+id/view_line4"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/color_ee"
             app:layout_constraintTop_toBottomOf="@id/tv_transformer_substation"
-            android:layout_marginTop="12dp"
-            />
+            android:layout_marginTop="12dp" />
         <TextView
             android:id="@+id/tv_voltage"
             android:text="电压"
             app:layout_constraintTop_toBottomOf="@id/view_line4"
             app:layout_constraintLeft_toLeftOf="parent"
-            style="@style/JHPower_survey_tv_top12"
-            />
+            style="@style/JHPower_survey_tv_top12" />
         <EditText
             android:id="@+id/et_voltage_number"
             app:layout_constraintTop_toTopOf="@id/tv_voltage"
@@ -168,8 +152,7 @@
             android:background="@null"
             android:hint="请输入电压"
             android:text="10"
-            style="@style/JHPower_survey_et"
-            />
+            style="@style/JHPower_survey_et" />
         <TextView
             android:id="@+id/tv_voltage_unit"
             android:text="kV"
@@ -179,25 +162,45 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="12sp"
-            android:textColor="@color/color_9c"
-            />
+            android:textColor="@color/color_9c" />
         <View
             android:id="@+id/view_line5"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/color_ee"
             app:layout_constraintTop_toBottomOf="@id/tv_voltage"
-            android:layout_marginTop="12dp"
-            />
+            android:layout_marginTop="12dp" />
         <TextView
+            android:id="@+id/tv_route_name_number_start"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="线路名称（起）"
+            android:text="线路名称及编号（起）"
             app:layout_constraintTop_toBottomOf="@id/view_line5"
             app:layout_constraintLeft_toLeftOf="parent"
             style="@style/JHPower_survey_tv_top12"/>
-
-
+        <EditText
+            android:id="@+id/et_route_name_number_start"
+            android:hint="请输入线路名称及编号"
+            app:layout_constraintTop_toTopOf="@id/tv_route_name_number_start"
+            app:layout_constraintBottom_toBottomOf="@id/tv_route_name_number_start"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@null"
+            style="@style/JHPower_survey_et" />
+        <View
+            android:id="@+id/view_line6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_ee"
+            app:layout_constraintTop_toBottomOf="@id/tv_route_name_number_start"
+            android:layout_marginTop="12dp" />
+        <TextView
+            android:id="@+id/tv_branch_route_name_number_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分支线路名称（起）"
+            app:layout_constraintTop_toBottomOf="@id/view_line6"
+            app:layout_constraintLeft_toLeftOf="parent"
+            style="@style/JHPower_survey_tv_top12"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
