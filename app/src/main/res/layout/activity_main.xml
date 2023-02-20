@@ -181,17 +181,16 @@
         <EditText
             android:id="@+id/et_route_name_number_start"
             android:hint="请输入线路名称及编号"
-            app:layout_constraintTop_toTopOf="@id/tv_route_name_number_start"
-            app:layout_constraintBottom_toBottomOf="@id/tv_route_name_number_start"
-            app:layout_constraintRight_toRightOf="parent"
-            android:background="@null"
-            style="@style/JHPower_survey_et" />
+            app:layout_constraintTop_toBottomOf="@id/tv_route_name_number_start"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:background="@drawable/et_multiline_input_shape"
+            style="@style/JHPower_multiline_input_et" />
         <View
             android:id="@+id/view_line6"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/color_ee"
-            app:layout_constraintTop_toBottomOf="@id/tv_route_name_number_start"
+            app:layout_constraintTop_toBottomOf="@id/et_route_name_number_start"
             android:layout_marginTop="12dp" />
         <TextView
             android:id="@+id/tv_branch_route_name_number_start"
@@ -201,6 +200,14 @@
             app:layout_constraintTop_toBottomOf="@id/view_line6"
             app:layout_constraintLeft_toLeftOf="parent"
             style="@style/JHPower_survey_tv_top12"/>
+        <EditText
+            android:id="@+id/et_branch_route_name_number_start"
+            android:hint="请输入分支线路名称（选填）"
+            android:background="@drawable/et_multiline_input_shape"
+            app:layout_constraintTop_toBottomOf="@id/tv_branch_route_name_number_start"
+            app:layout_constraintLeft_toRightOf="parent"
+            style="@style/JHPower_multiline_input_et"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
