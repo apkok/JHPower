@@ -252,6 +252,35 @@
             app:layout_constraintLeft_toRightOf="parent"
             style="@style/JHPower_multiline_input_et"/>
 
+        <View
+            android:id="@+id/view_line7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_ee"
+            app:layout_constraintTop_toBottomOf="@id/et_branch_route_name_number_start"
+            android:layout_marginTop="12dp" />
+        <TextView
+            android:id="@+id/tv_route_name_number_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="线路名称及编号（止）"
+            app:layout_constraintTop_toBottomOf="@id/view_line7"
+            app:layout_constraintLeft_toLeftOf="parent"
+            style="@style/JHPower_survey_tv_top12"/>
+        <EditText
+            android:id="@+id/et_route_name_number_end"
+            android:hint="请输入线路名称及编号"
+            app:layout_constraintTop_toBottomOf="@id/tv_route_name_number_end"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:background="@drawable/et_multiline_input_shape"
+            style="@style/JHPower_multiline_input_et" />
+        <View
+            android:id="@+id/view_line8"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_ee"
+            app:layout_constraintTop_toBottomOf="@id/et_route_name_number_end"
+            android:layout_marginTop="12dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
